@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <title>QUALITY RECIPIES</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="chandu.html">HOME</a>
+        </div>
+    <h1 class="head"> Payment Details</h1>
+    <hr>
+    <h3>User Details</h3>
+   
+   <form action="index.php" method="get">
+    <label for="name">
+   <p>  NAME :<input type="text" name="name" id="name" required placeholder="enter name"></p> 
+</label>
+ <label for="email">
+    <p> EMAIL:<input type="email" name="email" id="email" required placeholder="enter valid email adrress"></p> 
+ </label>
+   <p>PINCODE: <input type="number" name="pincode" required placeholder="enter valid pin code" ></p>
+
+<p>ADDRESS :   <textarea name="address" id="" cols="30" rows="10"></textarea></p> 
+
+<hr>
+
+<h3>payment details</h3>
+
+<p>PAYMENT THROUGH  :
+    <select name="card type" id="">
+        <option value="">select a card type</option>
+        <option value="visa">visa</option>
+        <option value="upi">upi</option>
+        <option value="netbanking">netbanking</option>
+    </select>
+</p>
+<p>CARD NUMBER: <input type="number" name="number" id="" required placeholder="enter a valid card number"></p>
+<p>CVV: <input type="number" name="CVV" id="" required ="3" required placeholder="enter your cvv pin"></p>
+<p>EXPIRY DATE: <input type="date" name="date" id=""></p>
+<p>PIN: <input type="password" name="password" id=""  required max="4"></p>
+<br>
+<div class="sub">
+<input type="submit" value="Pay Now" id="" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="reset" name="Reset" id="">
+</div>
+
+   </form>
+</div>
+
+</body>
+</html>
+<style>
+    * {
+        box-sizing: border-box;
+      
+    }
+    body {
+        margin: 50px;;
+        padding: 12px;
+    }
+    .container{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        padding: 15px 20px 15px 20px;
+        border: 2px solid grey;
+        margin: 10px 15px ;
+        background-color: rgba(236, 248, 209, 0.142);
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.578);
+    }
+    .head {
+        text-align: center;
+       
+      
+    }
+    input[type="submit"],
+    input[type="reset"]
+    {
+        background-color: rgba(156, 248, 229, 0.233);
+       border: 1px solid rgba(51, 49, 49, 0.432);
+       font-size: x-large;
+    }
+    .sub{
+        text-align: center;
+        padding: 10px 15px;
+    }
+    input[type="submit"]:hover {
+        background-color: bisque;
+        cursor: pointer;
+    }
+    
+    input[type="reset"]:hover{
+        background-color: beige;
+        cursor: pointer;
+    }
+    .nav{
+        float: right;
+        margin: 10px;
+    }
+    .nav a {
+        border: 1px solid black;
+        font-size: large;
+        padding: 5px 10px ;
+    }
+    .nav a:hover {
+        background-color: gold;
+        text-decoration: underline;
+    }
+</style>
+</html>

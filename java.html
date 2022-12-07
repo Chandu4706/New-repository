@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Homepage</title>
+        <script>
+            function validate() {
+                var username = document.myform.name.value;
+                var email = document.myform.email.value;
+                var password = document.myform.pass.value;
+                var cpassword = document.myform.cpass.value;
+                if (username == "" || username == null) {
+                    alert("Username cannot be blank.");
+                    return false;
+                } else if (email == "" || email == null) {
+                    alert("Email cannot be blank.");
+                    return false;
+                } else if (password.length < 6) {
+                    alert("Password must be of atleast 6 digits");
+                    return false;
+                } else if (password != cpassword) {
+                    alert("Password doesn't matched.");
+                    return false;
+                } else return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform" action="" onsubmit="return validate()">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" />
+            <br />
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" />
+            <br />
+            <label for="pass">Password: </label>
+            <input type="password" name="passowrd" id="pass" />
+            <br />
+            <label for="cpass">Confirm Password: </label>
+            <input type="password" name="cpassword" id="cpass" />
+            <br />
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

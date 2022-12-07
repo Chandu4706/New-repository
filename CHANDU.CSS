@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+font-family: sans-serif;
+box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    color: green;
+    padding: 20px;
+}
+nav{
+    background-color: lime;
+    display: grid;
+    place-items: center;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul a{
+    display: inline-block;
+    padding: 20px;
+text-decoration: none;
+color: #000;
+transition:0.2s ease in;
+font size:18px
+}
+nav ul a:hover{
+    background-color: green;
+    color:white;
+}
+.item1{
+    size-adjust: 500px;
+    size: 50px;
+}
+button{
+    text-align: center;
+}
+.test1{
+    text-align: center;
+}

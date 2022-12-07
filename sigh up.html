@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="signup.css">
+    <title>signup</title>
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <h1>sign up</h1>
+        </div>
+        <p>NAME: <input type="text" name="NAME" id="" placeholder="ENTER YOUR NAME"></p>
+        <p>EMAIL: <input type="email" name="EMAIL" id="" placeholder="ENTER YOUR VALID EMAIL"></p>
+        <p>PASSWORD: <input type="password" name="PASSWORD" id="" placeholder="ENTER YOUR PASSWORD"></p>
+        <p>CONTACT: <input type="number" name="CONTACT" id="" placeholder="ENTER YOUR CONTACT NUMBER" max="10"></p>
+
+        <div class="last">
+             <input type="submit" value="sign up" name="" id="">
+             <input type="reset" name="" id="">
+        </div>
+    </form>
+</body>
+</html>
+<style>
+    *{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 0;
+}
+body{
+    background-image:url("sighn\ up.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+
+}
+form{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    border: 2px solid white;
+    padding: 20px 30px ;
+    font-size: larger;
+}
+.container{
+    text-align: center;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="contact"] {
+    width: 90%;
+    padding: 10px;
+}
+p{
+    color: white;
+}
+</style>
