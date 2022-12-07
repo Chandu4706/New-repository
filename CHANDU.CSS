@@ -11,7 +11,7 @@ h1{
     padding: 20px;
 }
 nav{
-    background-color: lime;
+    background-color: pink;
     display: grid;
     place-items: center;
 }
@@ -24,10 +24,10 @@ nav ul a{
 text-decoration: none;
 color: #000;
 transition:0.2s ease in;
-font size:18px
+font size:20px
 }
 nav ul a:hover{
-    background-color: green;
+    background-color: red;
     color:white;
 }
 .item1{
@@ -35,7 +35,7 @@ nav ul a:hover{
     size: 50px;
 }
 button{
-    text-align: center;
+    text-align: left;
 }
 .test1{
     text-align: center;
